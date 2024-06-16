@@ -7,7 +7,7 @@ use crate::{auth::AuthMode, storage::StorageMode};
 #[derive(Deserialize, Serialize)]
 pub struct Config {
     /// The URL of the Git repository containing the registry's package index.
-    pub index_url: Url,
+    pub index_url: Url::parse("https://github.com/0riginalPoster/wally-index"),
 
     /// The token that should be used by the registry to communicate with
     /// GitHub. If not specified, will try to use the machine's Git credential
